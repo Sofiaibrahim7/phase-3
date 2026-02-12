@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Qwen Code Project
 
 This project contains implementations for task, conversation, and message models using SQLModel, an OpenAI Agent for intelligent task management, and a stateless chat API endpoint.
@@ -185,3 +186,6 @@ python verify_api.py
 - `test_agent.py`: Agent tests
 - `verify_api.py`: API verification script
 - `API_DOCUMENTATION.md`: Complete API documentation
+=======
+# phase-3
+>>>>>>> 67eca1bc572069da5ea8ae05333a85aea140b615
