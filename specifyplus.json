@@ -1,0 +1,52 @@
+{
+  "project": {
+    "name": "Phase III Todo AI Chatbot",
+    "version": "1.0.0",
+    "description": "A stateless AI chatbot application that integrates FastAPI, SQLModel, OpenAI Agents SDK, and MCP SDK for intelligent task management.",
+    "author": "AI Engineer",
+    "license": "MIT"
+  },
+  "specifications": {
+    "database": "./@specs/database/schema.md",
+    "features": "./@specs/features/chatbot.md",
+    "api": "./@specs/api/chat-endpoint.md"
+  },
+  "architecture": {
+    "framework": "FastAPI",
+    "database": "SQLModel",
+    "ai_sdk": "OpenAI Agents SDK",
+    "mcp_sdk": "MCP SDK",
+    "frontend": "ChatKit"
+  },
+  "components": [
+    {
+      "name": "Database Models",
+      "path": "./models/database_models.py",
+      "type": "sqlmodel"
+    },
+    {
+      "name": "OpenAI Agent",
+      "path": "./agent/openai_agent.py",
+      "type": "openai-agent"
+    },
+    {
+      "name": "API Endpoints",
+      "path": "./api/chat_endpoint.py",
+      "type": "fastapi"
+    },
+    {
+      "name": "Main Application",
+      "path": "./main.py",
+      "type": "application"
+    }
+  ],
+  "dependencies": [
+    "fastapi",
+    "sqlmodel",
+    "pydantic",
+    "openai",
+    "uvicorn"
+  ],
+  "state": "stateless",
+  "persistence": "database"
+}

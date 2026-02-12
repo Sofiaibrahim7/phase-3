@@ -1,0 +1,10 @@
+# Spec Kit Configuration
+spec_version: "1.0"
+project_name: "Hackathon Todo App"
+spec_dir: "./specs"
+output_dir: "./generated"
+generator:
+  enabled: true
+  templates:
+    - "typescript-react"
+    - "fastapi"
